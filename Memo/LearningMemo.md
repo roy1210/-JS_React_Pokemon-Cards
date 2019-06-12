@@ -63,7 +63,9 @@ let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
 
 ## Operator
 
-### if ? yes : no
+### Ternary Operator
+
+if ? yes : no
 
 {this.props.isWinner ? "Winner" : "Loser!"}
 → これを別のコードで書く。
