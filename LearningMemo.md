@@ -3,6 +3,7 @@
 memo for myself
 
 <hr>
+
 ## functino
 
 ### Random
@@ -26,6 +27,7 @@ let randIdx = Math.floor(Math.random() \* hand2.length);
 let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
 
 <hr>
+
 ## Method
 
 ### slice
@@ -33,14 +35,18 @@ let padToThree = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
 選択範囲を切り取る。
 
 <hr>
+
 ### .splice
-選択範囲を切り取って、Arrayを変更し、切り取ったものを返す。
-ARRAY.splice(start, QTY); リストで返す。 [0]を付けると、1番目を返す。
+
+選択範囲を切り取って、Array を変更し、切り取ったものを返す。
+ARRAY.splice(start, QTY); リストで返す。 [0]を付けると、1 番目を返す。
 
 <hr>
+
 ### .reduce
+
 ARRAY.reduce((previous, current)=> previous + current.value, default value);
-previousに変数を宣言し、そこに値が溜まっていく
+previous に変数を宣言し、そこに値が溜まっていく
 
 例:
 let hand1 = [];
@@ -54,7 +60,9 @@ let exp1 = hand1.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
 let exp2 = hand2.reduce((exp, pokemon) => exp + pokemon.base_experience, 0);
 
 <hr>
+
 ## Operator
+
 ### if ? yes : no
 
 {this.props.isWinner ? "Winner" : "Loser!"}
@@ -70,7 +78,9 @@ title = <h1 className="Pokedex-loser">Losing Hand</h1>;
 {title}
 
 <hr>
-### propsでBoonleanか、TrueかFalseを渡す。
-比較結果でTrueかFalseを渡せる。
+
+### props で Boonlean か、True か False を渡す。
+
+比較結果で True か False を渡せる。
 例
 <Pokedex pokemon={hand1} exp={exp1} isWinner={exp1 > exp2} />
